@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#DB0000" />
+    <meta name="dicoding:email" content="yonathandani77@gmail.com">
+    <title>ResepKu</title>
+    <script>
+      window.onload = function() {
+        const scrollToTopButton = document.getElementById('scrollToTopButton');
+
+        scrollToTopButton.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+
+        window.addEventListener('scroll', function() {
+          if (window.pageYOffset > 200) {
+            scrollToTopButton.style.display = 'block';
+          } else {
+            scrollToTopButton.style.display = 'none';
+          }
+        });
+      };
+    </script>
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <link rel="icon" href="./favicon.png" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="./app.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <title>ResepKu</title>
+  </head>
+  <body>
+    <a href="#mainContent" class="skip-link">Menuju ke konten</a>
+    <header class="app-bar">
+      <div class="app-bar__menu">
+        <button id="hamburgerButton">☰</button>
+      </div>
+      <div class="app-bar__brand">
+        <img src="./images/logo.png" id="img-logo" alt="logo" />
+      </div>
+      <nav id="navigationDrawer" class="app-bar__navigation">
+        <ul>
+          <li><a href="#/home">Home</a></li>
+          <li><a href="#/about-us">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
+    <main tabindex="0" id="mainContent"></main>
+    <div class="hr-thin"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://facebook.com/yonathan.sullivan.1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/yonathan_danii" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/yonathan_dani/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/yonathan-dani-kristiawan-a584b2253" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="/#/home/">Home</a></li>
+              <li><a href="/#/about-us/">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hr-thin" style="margin-top: 20px"></div>
+        <p tabindex="0">© 2023 Copyright ResepKu - Dicoding Capstone</p>
+      </div>
+    </footer>
+    <button id="scrollToTopButton" class="scroll-to-top-button">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+  </body>
+</html>

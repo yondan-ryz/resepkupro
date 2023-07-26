@@ -1,0 +1,348 @@
+@media screen and (min-width: 400px) {
+  h4{
+    position: absolute;
+    color: #634423;
+    font-weight: 700;
+    font-size: 15px;
+    text-shadow: 1px 1px #141414
+  }
+  .atasKiri{
+    font-size: medium;
+    left: 40%;
+      top: 44%;
+      transform: translate(-50%);
+      -webkit-transform: translate(-50%);
+      -moz-transform: translate(-50%);
+      -o-transform: translate(-50%);
+  }}
+
+@media screen and (min-width: 650px) {
+  h4{
+    position: absolute;
+    color: #634423;
+    font-weight: 700;
+    font-size: 20px;
+    text-shadow: 1px 1px #141414
+  }
+  .atasKiri{
+    font-size: x-large;
+    left: 40%;
+      top: 45%;
+      transform: translate(-50%);
+      -webkit-transform: translate(-50%);
+      -moz-transform: translate(-50%);
+      -o-transform: translate(-50%);
+  }
+
+  .headline {
+    display: flex;
+    align-items: center;
+    min-height: 330px;
+    width: 100%;
+    background-position: center;
+    text-align: justify;
+
+  }
+
+  .headline__content {
+    width: 600px;
+    float: left;
+    padding: 1px 32px;
+  }
+
+  .headline__figure {
+    width: 600px;
+    float: left;
+  }
+
+  .headline {
+    padding: 20px;
+    flex-direction: row;
+  }
+
+
+  #img-logo {
+    width: 12%;
+    margin: 3px;
+  }
+
+  #hamburgerButton {
+    color: white;
+  }
+
+  .menu-food-drink {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  .review {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .review-item {
+    background-color: #454545;
+    color: white;
+    margin-bottom: 3px;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+    background-color: #454545;
+  }
+
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em;
+  }
+
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+    background-color: #454545;
+  }
+
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
+
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  .app-bar .app-bar__navigation ul li a:hover {
+    color: black;
+  }
+
+  .foods {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .food {
+    grid-template-columns: auto 1fr;
+  }
+
+  .food .food__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .food .food__description {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+
+  .devs {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .dev {
+    grid-template-columns: auto 1fr;
+  }
+
+  .dev .dev__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .dev .dev__description {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+
+  footer #footerTools {
+    flex-direction: row;
+  }
+
+  .skip-link {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    padding: 8px;
+    background-color: #bf1722;
+    color: white;
+    z-index: 100;
+  }
+
+  .skip-link:focus {
+    top: 0;
+  }
+
+  .scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: none;
+    width: 60px;
+    height: 60px;
+    background-color: #634423;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .headline {
+    display: flex;
+    align-items: center;
+    min-height: 330px;
+    width: 100%;
+    background-position: center;
+    text-align: justify;
+    overflow: hidden;
+  }
+
+  .headline__content {
+    width: 800px;
+    float: left;
+    padding: 1px 32px;
+  }
+
+  .headline__figure {
+    width: 600px;
+    float: left;
+  }
+
+  .headline {
+    padding: 20px;
+    flex-direction: row;
+  }
+
+
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em;
+  }
+
+  .detail-item .detail-item__header .detail-item__header__poster {
+    width: 100%;
+    object-fit: scale-down;
+  }
+
+  .detail-item .detail-item__header .detail-item__error__image {
+    width: 35%;
+    height: 400px;
+    object-fit: scale-down;
+    background-color: aliceblue;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(
+    90deg,
+    rgba(54, 42, 28, 0.459) 4%,
+    rgba(114, 86, 58, 0.703) 53%,
+    rgba(79, 47, 11, 0.692) 100%
+  ),
+    url(../public/images/heros/hero-image_2.jpg);
+    background-position: center;
+    height: 50vh;
+  }
+
+  .detail-item .detail-item__content {
+    padding: 20px;
+  }
+
+  .atasKiri{
+    font-size: xx-large;
+    left: 40%;
+    top: 44%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+  }
+
+  .column {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  table {
+    border-style: solid;
+    border-color: #24262b;
+    width: 100%;
+  }
+
+  .hr-line-unhide{
+    display: none;
+    height: 2px;
+    background-color: #454545;
+    border: none;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .foods {
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .devs {
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .foods {
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .devs {
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .foods {
+    grid-template-columns: repeat(5, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .devs {
+    grid-template-columns: repeat(5, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
